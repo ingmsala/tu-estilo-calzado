@@ -1,0 +1,39 @@
+
+    [
+        {
+            "id": 1,
+            "nombre": "Juan Perez",
+            "foto": "img/testimonios/juan.jpg",
+            "detalle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+        },
+        {
+            "id": 2,
+            "nombre": "Maria Gomez",
+            "foto": "img/testimonios/maria.jpg",
+            "detalle": "Phasellus lacus odio, ullamcorper ac ipsum in, tincidunt tincidunt massa."
+        },
+        {
+            "id": 3,
+            "nombre": "Pedro Gonzalez",
+            "foto": "img/testimonios/pedro.jpg",
+            "detalle": "Suspendisse ut malesuada sapien, vitae mollis diam."
+        },
+        {
+            "id": 4,
+            "nombre": "Jose Lopez",
+            "foto": "img/testimonios/jose.jpg",
+            "detalle": "In egestas non tortor at tempor. Nullam maximus mi ac pharetra dictum."
+        },
+        {
+            "id": 5,
+            "nombre": "Ana Rodriguez",
+            "foto": "img/testimonios/ana.jpg",
+            "detalle": "Ut non enim finibus, tempus dui eget, tincidunt sem. Phasellus sed mauris elit. Pellentesque condimentum lorem vitae justo congue, ut semper nisi gravida. Sed viverra nibh eget tincidunt convallis."
+        },
+        {
+            "id": 6,
+            "nombre": "Lucia Fernandez",
+            "foto": "img/testimonios/lucia.jpg",
+            "detalle": "Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos."
+        }
+    ]

@@ -28,8 +28,10 @@ module.exports = {
     'react'
   ],
   rules: {
+    indent: ['error', 2],
+    quotes: ['error', 'single'],
     'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off',
-    'max-len': ['error', { code: 120 }]
+    'max-len': ['error', { code: 120, ignorePattern: 'd="([\\s\\S]*?)"' }]
   }
 }

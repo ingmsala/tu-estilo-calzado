@@ -1,5 +1,5 @@
 export default function Contacto () {
   return (
-    <div>Contacto</div>
+    <div className='h-96'>Contacto</div>
   )
 }

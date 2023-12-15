@@ -1,62 +1,143 @@
-export default function Navbar () {
+import { useState } from 'react'
+import { RxHamburgerMenu } from 'react-icons/rx'
+import { URL_WHATSAPP } from '../constants/const'
+
+export default function Navbar ({ transparent }) {
+  const [navbarOpen, setNavbarOpen] = useState(false)
+
+  const closeMenu = () => setNavbarOpen(false)
+
   return (
-    // nav bar tailwind
-    <nav className="bg-slate-400">
-      <div className="flex flex-wrap items-center justify-between p-3 mx-auto md:p-5">
-        <a href="#home" className="text-xl font-bold text-white">
-          Tu Estilo Calzado
-        </a>
-        <div className="flex md:hidden">
-          <button
-            type="button"
-            className="block text-white hover:text-gray-500 focus:text-gray-500 focus:outline-none"
+    <nav
+      className={
+        (transparent
+          ? 'bg-transparent'
+          : 'bg-white shadow-lg backdrop-filter backdrop-blur-lg bg-opacity-60') +
+          ` w-full flex flex-wrap items-center justify-between px-2 py-3 
+          fixed top-0 right-0 left-0 z-50 transition-colors duration-500 ease-in-out`
+      }
+    >
+      <div className='container px-4 mx-auto flex flex-wrap items-center justify-between'>
+        <div className='w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start'>
+          <a
+            className={
+              (transparent ? 'text-white' : 'text-gray-800') +
+              ' text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase'
+            }
+            onClick={closeMenu}
+            href='/'
           >
-            <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
-              <path
-                className="hidden"
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"
-              />
-              <path
-                className="block"
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M0 4h24v2H0zm0 7h24v2H0zm0 7h24v2H0z"
-              />
-            </svg>
+            TEC
+          </a>
+          <button
+            className='cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent
+            rounded bg-transparent block lg:hidden outline-none focus:outline-none'
+            type='button'
+            onClick={() => setNavbarOpen(!navbarOpen)}
+          >
+            <RxHamburgerMenu className={(transparent ? 'text-white' : 'text-gray-800') + ' w-6 h-6 '} />
           </button>
         </div>
-        <div className="items-center w-full md:w-auto md:flex">
-          <div className="flex flex-col mt-2 md:flex-row md:mt-0 md:mx-1">
-            <a
-              href="#home"
-              className="px-2 py-1 text-white font-semibold rounded hover:bg-gray-800"
-            >
-              Inicio
-            </a>
-            <a
-              href="#about"
-              className="px-2 py-1 text-white font-semibold rounded hover:bg-gray-800"
-            >
-              Nosotros
-            </a>
-            <a
-              href="#products"
-              className="px-2 py-1 text-white font-semibold rounded hover:bg-gray-800"
-            >
-              Como comprar
-            </a>
-            <a
-              href="#contact"
-              className="px-2 py-1 text-white font-semibold rounded hover:bg-gray-800"
-            >
-              La feria
-            </a>
-          </div>
+        <div
+          className={
+            'lg:flex flex-grow lg:flex-grow-0 items-center bg-white lg:bg-transparent lg:shadow-none ' +
+            (navbarOpen ? ' block rounded shadow-lg' : ' hidden')
+          }
+          id='navbar-warning'
+        >
+          <ul className='flex flex-col lg:flex-row list-none'>
+            <li className='flex items-center'>
+              <a
+                className={
+                  (transparent
+                    ? 'lg:text-white lg:hover:text-gray-300 text-gray-800'
+                    : 'text-gray-800 hover:text-gray-600') +
+                  ' px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold'
+                }
+                onClick={closeMenu}
+                href='#acercade'
+              >
+                Quienes somos
+              </a>
+            </li>
+            <li className='flex items-center'>
+              <a
+                className={
+                  (transparent
+                    ? 'lg:text-white lg:hover:text-gray-300 text-gray-800'
+                    : 'text-gray-800 hover:text-gray-600') +
+                  ' px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold'
+                }
+                onClick={closeMenu}
+                href='#productos'
+              >
+                Productos
+              </a>
+            </li>
+            <li className='flex items-center'>
+              <a
+                className={
+                  (transparent
+                    ? 'lg:text-white lg:hover:text-gray-300 text-gray-800'
+                    : 'text-gray-800 hover:text-gray-600') +
+                  ' px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold'
+                }
+                onClick={closeMenu}
+                href='#feria'
+              >
+                La feria
+              </a>
+            </li>
+            <li className='flex items-center'>
+              <a
+                className={
+                  (transparent
+                    ? 'lg:text-white lg:hover:text-gray-300 text-gray-800'
+                    : 'text-gray-800 hover:text-gray-600') +
+                  ' px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold'
+                }
+                onClick={closeMenu}
+                href='#ubicacion'
+              >
+                Ubicación
+              </a>
+            </li>
+            <li className='flex items-center'>
+              <a
+                className={
+                  (transparent
+                    ? 'lg:text-white lg:hover:text-gray-300 text-gray-800'
+                    : 'text-gray-800 hover:text-gray-600') +
+                  ' px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold'
+                }
+                onClick={closeMenu}
+                href='#testimonios'
+              >
+                Nuestros clientes
+              </a>
+            </li>
+          </ul>
+          <ul className='flex flex-col lg:flex-row list-none ml-auto'>
+            <li className='flex items-center'>
+              <a
+                className={
+                  (transparent
+                    ? 'lg:bg-white text-gray-800 active:bg-gray-100'
+                    : 'bg-red-500 text-white active:bg-red-600') +
+                    ` text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none 
+                      focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 transition-all duration-150 ease-in-out`
+                }
+                href={URL_WHATSAPP}
+                target='_blank' rel='noreferrer'
+                onClick={closeMenu}
+                type='button'
+              >
+                Consultar
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-
     </nav>
   )
 }
