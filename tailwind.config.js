@@ -5,7 +5,17 @@ export default {
     './src/**/*.{js,ts,jsx,tsx}'
   ],
   theme: {
-    extend: {}
+    extend: {
+      colors: {
+        main: '#e30e1b'
+      },
+      fontFamily: {
+        autography: ['Autography', 'regular'],
+        comfortaaB: ['Comfortaa-Bold', 'regular'],
+        comfortaaL: ['Comfortaa-Light', 'regular'],
+        sans: ['Comfortaa-Regular', 'Helvetica', 'Arial', 'sans-serif']
+      }
+    }
   },
   plugins: []
 }

@@ -11,13 +11,13 @@ export default function Hero () {
       </div>
       <div className='container relative mx-auto'>
         <div className='items-center flex flex-wrap'>
-          <div className='w-full lg:w-6/12 px-4 ml-auto mr-auto text-center'>
-            <div className='pr-12'>
-              <h1 className='text-white font-semibold text-5xl'>
+          <div className='w-full px-4 ml-auto mr-auto text-center'>
+            <div className=''>
+              <h1 className='text-main font-bold text-4xl md:text-7xl'>
                       Tu estilo calzado
               </h1>
-              <p className='mt-4 text-lg text-gray-300 font-thin opacity-80'>
-                      La comodidad puesta a tu servicio
+              <p className='mt-4 text-4xl text-gray-300 font-thin opacity-80 font-autography'>
+                      El descanso a tus pies
               </p>
             </div>
           </div>

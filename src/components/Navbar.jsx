@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { RxHamburgerMenu } from 'react-icons/rx'
 import { URL_WHATSAPP } from '../constants/const'
+import logo from '../assets/img/logo-1x-h.webp'
 
 export default function Navbar ({ transparent }) {
   const [navbarOpen, setNavbarOpen] = useState(false)
@@ -22,12 +23,12 @@ export default function Navbar ({ transparent }) {
           <a
             className={
               (transparent ? 'text-white' : 'text-gray-800') +
-              ' text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase'
+              ' text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase font-autography'
             }
             onClick={closeMenu}
             href='/'
           >
-            TEC
+            <img src={logo} alt='TEC' className='w-20' />
           </a>
           <button
             className='cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent
@@ -132,7 +133,7 @@ export default function Navbar ({ transparent }) {
                 onClick={closeMenu}
                 type='button'
               >
-                Consultar
+                Comprar
               </a>
             </li>
           </ul>

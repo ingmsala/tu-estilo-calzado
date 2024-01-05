@@ -2,6 +2,7 @@ import React from 'react'
 import { PHONE_NUMBER, URL_INSTAGRAM, URL_WHATSAPP } from '../constants/const'
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa'
 import Polygon from './Polygon'
+import logo from '../assets/img/logo-1x-h.webp'
 
 export default function Footer () {
   return (
@@ -10,10 +11,8 @@ export default function Footer () {
       <div className='container mx-auto px-4 max-w-6xl'>
         <div className='flex flex-wrap'>
           <div className='w-full px-4 flex flex-col md:flex-row gap-9 md:gap-0 text-center md:text-left justify-center'>
-            <div>
-              <h4 className='text-3xl font-semibold'>
-              TEC
-              </h4>
+            <div className='flex items-center md:items-start flex-col'>
+              <img src={logo} alt='TEC' className='w-20' />
               <ul className='leading-relaxed m-4 text-gray-600 flex flex-col items-center md:items-start'>
                 <li>Feria de San Vicente</li>
                 <li>San Jerónimo 2750</li>
@@ -22,7 +21,7 @@ export default function Footer () {
               </ul>
 
             </div>
-            <div className='flex flex-col self-start flex-1 gap-6'>
+            <div className='flex flex-col md:self-start flex-1 gap-6'>
 
               <div className=' justify-end items-center text-gray-600 flex flex-col gap-2'>
                 <h4 className='text-base font-semibold'>
@@ -102,9 +101,9 @@ export default function Footer () {
         </div>
         <hr className='my-6 border-gray-400' />
         <div className='flex flex-wrap items-center md:justify-between justify-center'>
-          <div className='w-full md:w-4/12 px-4 mx-auto text-center'>
-            <div className='text-sm text-gray-600 font-semibold py-1'>
-              Copyright © {new Date().getFullYear()}
+          <div className='w-full px-4 mx-auto text-center'>
+            <div className='text-xs text-gray-500 font-semibold py-1'>
+              © {new Date().getFullYear()} Tu estilo calzado. Todos los derechos reservados
             </div>
           </div>
         </div>

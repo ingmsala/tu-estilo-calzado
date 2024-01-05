@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Autography';
+    src: url('./static/fonts/Autography.otf');
+}
+
+@font-face {
+    font-family: 'Comfortaa-Bold';
+    src: url('./static/fonts/Comfortaa-Bold.ttf');
+}
+@font-face {
+    font-family: 'Comfortaa-Light';
+    src: url('./static/fonts/Comfortaa-Light.ttf');
+}
+@font-face {
+    font-family: 'Comfortaa-Regular';
+    src: url('./static/fonts/Comfortaa-Regular.ttf');
+}

@@ -5,6 +5,7 @@ import 'slick-carousel/slick/slick-theme.css'
 import Testimonio from './Testimonio'
 import { Fade } from 'react-awesome-reveal'
 import Polygon from './Polygon'
+import { MdOutlineEmojiPeople } from 'react-icons/md'
 
 export default function Testimonios () {
   const settings = {
@@ -20,14 +21,18 @@ export default function Testimonios () {
   }
 
   return (
-    <section className='relative pt-20 pb-5 bg-gray-800 w-full'>
+    <section className='relative py-20 bg-gray-800 w-full'>
 
       <Polygon color='text-gray-800' id='testimonios' />
 
       <Fade className='container mx-auto px-4  lg:pb-5'>
         <div className='flex flex-wrap text-center justify-center'>
           <div className='w-full lg:w-6/12 px-4'>
-            <h2 className='text-4xl font-semibold text-white'>
+            <div className='text-gray-600 p-3 text-center inline-flex items-center justify-center
+               w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100/10'>
+              <MdOutlineEmojiPeople className='w-8 h-8 text-gray-300/80' />
+            </div>
+            <h2 className='text-4xl font-semibold text-main'>
               Nuestros clientes
             </h2>
           </div>

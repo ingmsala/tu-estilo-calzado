@@ -3,6 +3,7 @@ import { IoCheckmarkOutline } from 'react-icons/io5'
 import CardValores from './CardValores'
 import { FaHeart } from 'react-icons/fa'
 import { Slide, Zoom } from 'react-awesome-reveal'
+import logoB from '../assets/img/logo-1x-black.webp'
 
 export default function QuienesSomos () {
   return (
@@ -49,33 +50,36 @@ export default function QuienesSomos () {
         <div className='flex flex-wrap items-center pt-20 gap-7 md:gap-0' id='acercade'>
 
           <Slide className='w-full md:w-5/12 px-4 mr-auto ml-auto' duration='300'>
-            <>
+            <div className='flex flex-col items-center md:flex-none md:items-start'>
               <div className='text-gray-600 p-3 text-center inline-flex items-center justify-center
             w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100'>
-              TEC
+                <img src={logoB} alt="TEC" className='w-10 -rotate-90' />
               </div>
-              <h3 className='text-3xl mb-2 font-semibold leading-normal'>
+              <h3 className='text-3xl mb-2 font-semibold leading-normal text-main'>
                   Quienes somos
               </h3>
               <p className='text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700'>
-                  Tu Estilo Calzados es una forma de andar por el mundo. Nuestro objetivo es tu comodidad,
+                <strong className='font-bold'>Tu Estilo calzado</strong> es
+                  una forma de andar por el mundo. Nuestro objetivo es tu comodidad,
                   queremos que puedas caminar tranquilo con tu calzado ideal para el lugar que elijas.
               </p>
               <p className='text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700'>
                   Nos importa conocerte para elegir juntos la mejor opción para tus pies.
-                  Estamos acá para acompañarte adonde quieras ir.
+              </p>
+              <p className='text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700'>
+                  Estamos acá <span className='text-main'>para acompañarte adonde quieras ir.</span>
               </p>
 
-            </>
+            </div>
           </Slide>
 
           <Slide className='w-full md:w-4/12 px-4 mr-auto ml-auto' direction='right' duration='300'>
             <>
-              <div className='relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-red-600'>
+              <div className='relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg '>
                 <img
                   alt='...'
                   src='https://placehold.co/600x400.png'
-                  className='w-full align-middle rounded-t-lg'
+                  className='w-full align-middle rounded-lg'
                 />
               </div>
             </>

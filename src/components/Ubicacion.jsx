@@ -1,5 +1,6 @@
 import { Fade, Zoom } from 'react-awesome-reveal'
 import Polygon from './Polygon'
+import { IoLocationSharp } from 'react-icons/io5'
 
 export default function Ubicacion () {
   return (
@@ -9,8 +10,12 @@ export default function Ubicacion () {
       <div className='container mx-auto px-4 '>
         <div className='flex flex-wrap lg:flex-nowrap justify-center items-center text-start mb-24 lg:gap-24'>
           <Fade duration={700}>
-            <div className='px-4'>
-              <h2 className='text-4xl font-semibold text-center md:text-left'>
+            <div className='px-4 flex flex-col items-center md:flex-none md:items-start'>
+              <div className='text-gray-600 p-3 text-center inline-flex items-center justify-center
+               w-16 h-16 mb-6 shadow-lg rounded-full bg-amber-200/30'>
+                <IoLocationSharp className='w-8 h-8 text-main/80' />
+              </div>
+              <h2 className='text-4xl font-semibold text-center md:text-left text-main'>
                   Dónde estamos?
               </h2>
               <ul className='leading-relaxed m-4 text-gray-600 flex flex-col items-center md:items-start'>

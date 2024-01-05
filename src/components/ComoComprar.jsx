@@ -20,20 +20,21 @@ export default function ComoComprar () {
             />
           </Slide>
           <div className='w-full md:w-6/12 mx-auto mt-4 lg:mt-0 px-4'>
-            <Slide duration={300} direction='right' className='md:pr-12'>
+            <Slide duration={300} direction='right' className='md:pr-12 text-center md:text-left'>
               <div className='text-pink-600 p-3 text-center inline-flex
               items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300'>
                 <HiOutlineShoppingBag className='w-8 h-8 text-white' />
               </div>
-              <h3 className='text-3xl font-semibold'>
+              <h3 className='text-3xl font-semibold text-main'>
                     Cómo comprar
               </h3>
               <p className='mt-4 text-lg leading-relaxed text-gray-600'>
-                    Para comprar podés acercarte a la Feria de San Vicente, nos encontrás en el puesto xx.
-                    Si no podés venir, contactanos por whatsapp y coordinamos el pago y la entrega.
+                    Para comprar podés acercarte a la <strong className='font-bold'>Feria de San Vicente</strong>,
+                    donde encontrás nuestro puesto.
+                    Si no podés venir, contactanos por whatsapp y coordinamos el pago y la entrega de tu compra.
               </p>
-              <ul className='mt-6 sm:flex gap-3 flex-wrap w-full block divide-y-8 sm:divide-y-0'>
-                <li>
+              <ul className='mt-6 block md:flex gap-3 flex-wrap w-full '>
+                <li className='mb-3 md:mb-0'>
                   <a
                     className='flex gap-3 justify-center items-center text-white
                           hover:bg-red-500 group p-4 bg-red-400 rounded-lg shadow-lg'
@@ -49,7 +50,7 @@ export default function ComoComprar () {
                       border-solid border-pink-700 hover:text-pink-800 hover:border-pink-800 group p-4 rounded-lg'
                     href='#drive'>
                     <BsDownload className='w-6 h-6 group-hover:scale-105' />
-                                Descargá nuestro catálogo
+                                Ver nuestro catálogo
                   </a>
                 </li>
 
