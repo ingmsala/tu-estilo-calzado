@@ -5,7 +5,7 @@ import { IoLocationSharp } from 'react-icons/io5'
 export default function Ubicacion () {
   return (
 
-    <section id='ubicacion' className='relative pt-20'>
+    <section id='ubicacion' className='relative pt-28'>
       <Polygon color='text-white' />
       <div className='container mx-auto px-4 '>
         <div className='flex flex-wrap lg:flex-nowrap justify-center items-center text-start mb-24 lg:gap-24'>

@@ -3,9 +3,9 @@ import feriaImg from '../assets/img/feria.webp'
 
 export default function Feria () {
   return (
-    <section id='feria' className='relative flex content-end items-end justify-start min-h-[75vh] overflow-hidden'>
+    <section id='feria' className='relative flex content-end items-end justify-start min-h-[75vh] overflow-hidden '>
 
-      <div className='absolute top-0 w-full h-full bg-center bg-cover'
+      <div className='absolute top-20 w-full h-full bg-center bg-cover  '
         style={{
           backgroundImage: `url(${feriaImg})`
         }}>

@@ -8,7 +8,7 @@ import logoB from '../assets/img/logo-1x-black.webp'
 export default function QuienesSomos () {
   return (
 
-    <section className='pb-20 bg-gray-300 -mt-24'>
+    <section className='pb-20 bg-gray-300 -mt-24' >
       <div className='container mx-auto px-4'>
         <div className='flex flex-wrap'>
           <div className='lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center'>
@@ -47,21 +47,15 @@ export default function QuienesSomos () {
           </div>
         </div>
 
-        <div className='flex flex-wrap items-center pt-20 gap-7 md:gap-0' id='acercade'>
+        <div className='flex flex-wrap items-center pt-28 gap-7 md:gap-0' id='acercade'>
 
           <Slide className='w-full md:w-5/12 px-4 mr-auto ml-auto' duration='300'>
             <div className='flex flex-col items-center md:flex-none md:items-start'>
-              <div className='text-gray-600 p-3 text-center inline-flex items-center justify-center
-            w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100'>
-                <img src={logoB} alt="TEC" className='w-10 -rotate-90' />
-              </div>
-              <h3 className='text-3xl mb-2 font-semibold leading-normal text-main'>
-                  Quienes somos
-              </h3>
+              
               <p className='text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700'>
                 <strong className='font-bold'>Tu Estilo calzado</strong> es
                   una forma de andar por el mundo. Nuestro objetivo es tu comodidad,
-                  queremos que puedas caminar tranquilo con tu calzado ideal para el lugar que elijas.
+                  queremos que puedas caminar tranquilo con tu calzado ideal para el lugar que elijas. 
               </p>
               <p className='text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700'>
                   Nos importa conocerte para elegir juntos la mejor opción para tus pies.
@@ -75,12 +69,13 @@ export default function QuienesSomos () {
 
           <Slide className='w-full md:w-4/12 px-4 mr-auto ml-auto' direction='right' duration='300'>
             <>
-              <div className='relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg '>
-                <img
-                  alt='...'
-                  src='https://placehold.co/600x400.png'
-                  className='w-full align-middle rounded-lg'
-                />
+              <div className='flex flex-col items-center md:flex-none md:items-start'>
+               
+                <h3 className='text-3xl mb-2 font-bold leading-normal text-main'>
+                    Quienes somos
+                </h3>
+                
+              
               </div>
             </>
           </Slide>

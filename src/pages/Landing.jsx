@@ -1,12 +1,13 @@
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
-import Hero from '../components/Hero'
+import Hero from '../components/Hero1'
 import QuienesSomos from '../components/QuienesSomos'
 import ComoComprar from '../components/ComoComprar'
 import Ubicacion from '../components/Ubicacion'
 import Feria from '../components/Feria'
 import { useEffect, useState } from 'react'
 import Testimonios from '../components/Testimonios'
+import Contacto from '../components/Contacto'
 
 export default function Landing () {
   const [isTransparent, setIsTransparent] = useState(true)
@@ -34,6 +35,7 @@ export default function Landing () {
         <Feria />
         <Ubicacion />
         <Testimonios />
+        <Contacto/>
       </main>
       <Footer />
     </>

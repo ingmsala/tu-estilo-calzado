@@ -9,7 +9,8 @@ export default function Hero () {
         }}>
         <span id='blackOverlay' className='w-full h-full absolute opacity-75 bg-black'></span>
       </div>
-      <div className='container relative mx-auto'>
+      
+        <div className='container relative mx-auto'>
         <div className='items-center flex flex-wrap'>
           <div className='w-full px-4 ml-auto mr-auto text-center'>
             <div className=''>
@@ -21,12 +22,11 @@ export default function Hero () {
               </p>
             </div>
           </div>
-
         </div>
       </div>
+      
       <div
-        className='top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-[70px]'
-      >
+        className='top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-[70px]'>
         <svg
           className='absolute bottom-0 overflow-hidden'
           xmlns='http://www.w3.org/2000/svg'

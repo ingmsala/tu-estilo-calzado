@@ -2,38 +2,26 @@
     [
         {
             "id": 1,
-            "nombre": "Juan Perez",
+            "nombre": "Alejandra",
             "foto": "img/testimonios/juan.jpg",
-            "detalle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+            "detalle": "Tiene mucha variedad, buen calidad y es muy amable para vender. Además con la compra siempre te regala una plantita"
         },
         {
             "id": 2,
-            "nombre": "Maria Gomez",
+            "nombre": "Noe",
             "foto": "img/testimonios/maria.jpg",
-            "detalle": "Phasellus lacus odio, ullamcorper ac ipsum in, tincidunt tincidunt massa."
+            "detalle": "Celina siempre me ha atendido de forma tan amena y cálida, que me dan ganas de volver. Todos los productos son de gran calidad. La recomiendo mucho."
         },
         {
             "id": 3,
-            "nombre": "Pedro Gonzalez",
+            "nombre": "Marytte",
             "foto": "img/testimonios/pedro.jpg",
-            "detalle": "Suspendisse ut malesuada sapien, vitae mollis diam."
+            "detalle": "La atención siempre ha sido la mejor. Celina hace sentir a cada uno como un cliente privilegiado. Tiene productos de excelente calidad y siempre la recomiendo."
         },
         {
             "id": 4,
-            "nombre": "Jose Lopez",
+            "nombre": "Alita ",
             "foto": "img/testimonios/jose.jpg",
-            "detalle": "In egestas non tortor at tempor. Nullam maximus mi ac pharetra dictum."
-        },
-        {
-            "id": 5,
-            "nombre": "Ana Rodriguez",
-            "foto": "img/testimonios/ana.jpg",
-            "detalle": "Ut non enim finibus, tempus dui eget, tincidunt sem. Phasellus sed mauris elit. Pellentesque condimentum lorem vitae justo congue, ut semper nisi gravida. Sed viverra nibh eget tincidunt convallis."
-        },
-        {
-            "id": 6,
-            "nombre": "Lucia Fernandez",
-            "foto": "img/testimonios/lucia.jpg",
-            "detalle": "Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos."
+            "detalle": "Celina es la mejor vendedora, cada vez que la visitamos nos ayuda a elegir siempre el mejor producto y la mejor opción para nuestros pies."
         }
     ]

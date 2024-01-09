@@ -58,7 +58,7 @@ export default function Navbar ({ transparent }) {
                 onClick={closeMenu}
                 href='#acercade'
               >
-                Quienes somos
+                Quiénes somos
               </a>
             </li>
             <li className='flex items-center'>
@@ -72,7 +72,7 @@ export default function Navbar ({ transparent }) {
                 onClick={closeMenu}
                 href='#productos'
               >
-                Productos
+                Cómo Comprar
               </a>
             </li>
             <li className='flex items-center'>
@@ -99,8 +99,7 @@ export default function Navbar ({ transparent }) {
                 }
                 onClick={closeMenu}
                 href='#ubicacion'
-              >
-                Ubicación
+              >Dónde estamos
               </a>
             </li>
             <li className='flex items-center'>
@@ -114,7 +113,21 @@ export default function Navbar ({ transparent }) {
                 onClick={closeMenu}
                 href='#testimonios'
               >
-                Nuestros clientes
+                Clientes
+              </a>
+            </li>
+            <li className='flex items-center'>
+              <a
+                className={
+                  (transparent
+                    ? 'lg:text-white lg:hover:text-gray-300 text-gray-800'
+                    : 'text-gray-800 hover:text-gray-600') +
+                  ' px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold'
+                }
+                onClick={closeMenu}
+                href='#contactanos'
+              >
+                Contacto
               </a>
             </li>
           </ul>

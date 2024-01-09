@@ -4,10 +4,11 @@ import { BsDownload } from 'react-icons/bs'
 import { URL_WHATSAPP } from '../constants/const'
 import { Slide } from 'react-awesome-reveal'
 import Polygon from './Polygon'
+import producto1 from '../assets/img/producto1.png'
 
 export default function ComoComprar () {
   return (
-    <section id='productos' className='relative py-20'>
+    <section id='productos' className='relative py-28'>
       <Polygon color='text-white' />
 
       <div className='container mx-auto px-4'>
@@ -16,7 +17,7 @@ export default function ComoComprar () {
             <img
               alt='...'
               className='max-w-full rounded-lg shadow-lg'
-              src='https://placehold.co/400x500.png'
+              src= {producto1}
             />
           </Slide>
           <div className='w-full md:w-6/12 mx-auto mt-4 lg:mt-0 px-4'>
