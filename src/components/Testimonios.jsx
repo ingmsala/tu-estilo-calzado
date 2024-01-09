@@ -29,8 +29,8 @@ export default function Testimonios () {
         <div className='flex flex-wrap text-center justify-center'>
           <div className='w-full lg:w-6/12 px-4'>
             <div className='text-gray-600 p-3 text-center inline-flex items-center justify-center
-               w-16 h-16 mb-6 shadow-lg rounded-full bg-main'>
-              <MdOutlineEmojiPeople className='w-8 h-8 text-white' />
+               w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100/75'>
+              <MdOutlineEmojiPeople className='w-8 h-8 text-main' />
             </div>
             <h2 className='text-4xl font-semibold text-white'>
               Clientes Felices

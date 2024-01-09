@@ -1,24 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 
-export default function Formulario  () {
-  
+export default function Formulario () {
   const [formData, setFormData] = useState({
     nombreApellido: '',
     telefono: '',
     correo: '',
-    mensaje: '',
-  });
+    mensaje: ''
+  })
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
+    const { name, value } = e.target
+    setFormData({ ...formData, [name]: value })
+  }
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
-    console.log(formData);
-  };
+    console.log(formData)
+  }
 
   return (
     <form className="max-w-md mx-auto" onSubmit={handleSubmit}>
@@ -70,5 +69,5 @@ export default function Formulario  () {
       </div>
       <button type="submit" className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md">Enviar</button>
     </form>
-  );
+  )
 }

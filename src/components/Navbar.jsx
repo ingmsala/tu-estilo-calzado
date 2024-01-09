@@ -28,7 +28,12 @@ export default function Navbar ({ transparent }) {
             onClick={closeMenu}
             href='/'
           >
-            <img src={logo} alt='TEC' className='w-20' />
+            <img src={logo} alt='TEC' className={
+              (transparent
+                ? 'hidden md:block'
+                : 'block') +
+            ' w-20'}
+            />
           </a>
           <button
             className='cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent
