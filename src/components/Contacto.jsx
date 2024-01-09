@@ -1,5 +1,5 @@
 import { Slide } from 'react-awesome-reveal'
-import { PHONE_NUMBER, URL_WHATSAPP } from '../constants/const'
+import { MAIL, PHONE_NUMBER, URL_WHATSAPP } from '../constants/const'
 import { FaWhatsapp, FaEnvelope } from 'react-icons/fa'
 
 export default function Contacto () {
@@ -38,11 +38,11 @@ export default function Contacto () {
               </p>
 
               <a className='flex items-center justify-center gap-3 hover:text-gray-400'
-                href="mailto:tuestilocalzados@gmail.com"
+                href={'mailto:' + MAIL}
                 target='_blank' rel='noreferrer'
               >
                 <FaEnvelope className='w-6 h-6' />
-                <div className='font'>tuestilocalzados@gmail.com</div>
+                <div className='font'>{MAIL}</div>
               </a>
 
             </div>
