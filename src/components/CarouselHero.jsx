@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react'
-import { ChevronLeft, ChevronRight } from 'react-feather'
+
 
 const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 3000 }) => {
   const [curr, setCurr] = useState(0)
 
   const prev = () => setCurr((curr) => (curr === 0 ? slides.length - 1 : curr - 1))
-
   const next = () => setCurr((curr) => (curr === slides.length - 1 ? 0 : curr + 1))
 
   useEffect(() => {
@@ -19,15 +18,6 @@ const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 300
       <div className='flex transition-transform ease-out duration-500' style={{ transform: `translateX(-${curr * 100}%)` }}>
         {slides}
       </div>
-      <div className="hidden absolute inset-0 items-center justify-between p-4">
-        <button onClick={prev} className='p-1 rounded-full shadow bg-white/20 text-gray-500 hover:bg-white'>
-          <ChevronLeft />
-        </button>
-        <button onClick={next} className='p-1 rounded-full shadow bg-white/20 text-gray-500 hover:bg-white'>
-          <ChevronRight />
-        </button>
-      </div>
-
     </div>
 
   )

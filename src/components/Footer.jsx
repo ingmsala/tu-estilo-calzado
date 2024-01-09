@@ -61,9 +61,7 @@ export default function Footer () {
             </div>
             <div className='flex items-center justify-center flex-wrap items-top mb-6'>
               <div className='px-4'>
-                <span className='block uppercase  text-white text-sm font-semibold mb-2'>
-                  SITIO
-                </span>
+                
                 <ul className='list-unstyled'>
                   <li>
                     <a className=' text-white hover:text-gray-600 font-semibold block pb-2 text-sm'

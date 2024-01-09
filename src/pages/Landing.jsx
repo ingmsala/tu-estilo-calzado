@@ -1,6 +1,6 @@
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
-import Hero from '../components/Hero1'
+import Hero from '../components/Hero'
 import QuienesSomos from '../components/QuienesSomos'
 import ComoComprar from '../components/ComoComprar'
 import Ubicacion from '../components/Ubicacion'
