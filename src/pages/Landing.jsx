@@ -5,25 +5,12 @@ import QuienesSomos from '../components/QuienesSomos'
 import ComoComprar from '../components/ComoComprar'
 import Ubicacion from '../components/Ubicacion'
 import Feria from '../components/Feria'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import Testimonios from '../components/Testimonios'
 import Contacto from '../components/Contacto'
 
 export default function Landing () {
-  const [isTransparent, setIsTransparent] = useState(true)
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY
-      setIsTransparent(scrollY < 120)
-    }
-
-    window.addEventListener('scroll', handleScroll)
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
+  const [isTransparent] = useState(false)
 
   return (
     <>

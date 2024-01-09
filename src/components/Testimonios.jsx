@@ -4,15 +4,25 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import Testimonio from './Testimonio'
 import { Fade } from 'react-awesome-reveal'
-import Polygon from './Polygon'
-import { MdOutlineEmojiPeople } from 'react-icons/md'
+import { useEffect, useState } from 'react'
 
 export default function Testimonios () {
+  // if md query slidesToShow = 3 else slidesToShow = 1
+
+  const [slidesToShow, setSlidesToShow] = useState(3)
+
+  useEffect(() => {
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) setSlidesToShow(3)
+      else setSlidesToShow(1)
+    })
+  }, [])
+
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
@@ -21,17 +31,12 @@ export default function Testimonios () {
   }
 
   return (
-    <section className='relative py-32 bg-main w-full'>
-
-      <Polygon color='text-main' id='testimonios' />
+    <section className='relative py-32 bg-title w-full' id='testimonios'>
 
       <Fade className='container mx-auto px-4  lg:pb-5'>
         <div className='flex flex-wrap text-center justify-center'>
           <div className='w-full lg:w-6/12 px-4'>
-            <div className='text-gray-600 p-3 text-center inline-flex items-center justify-center
-               w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100/75'>
-              <MdOutlineEmojiPeople className='w-8 h-8 text-main' />
-            </div>
+
             <h2 className='text-4xl font-semibold text-white'>
               Clientes Felices
             </h2>
