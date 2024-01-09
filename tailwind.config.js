@@ -7,12 +7,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        main: '#e30e1b'
+        main: '#e30e1b',
+        title: '#D80000'
       },
       fontFamily: {
         autography: ['Autography', 'regular'],
         comfortaaB: ['Comfortaa-Bold', 'regular'],
         comfortaaL: ['Comfortaa-Light', 'regular'],
+        interB: ['Inter-Bold', 'black'],
         sans: ['Comfortaa-Regular', 'Helvetica', 'Arial', 'sans-serif']
       }
     }

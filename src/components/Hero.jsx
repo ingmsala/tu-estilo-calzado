@@ -9,17 +9,14 @@ const slides = [
 
 export default function Hero () {
   return (
-    <section className='relative flex content-center items-center justify-center '>
-      <div className="">
-        <div className="w-full h-full ">
-          <Carousel autoSlide={true} >
-            {[...slides.map((s) =>
-              <img src={s} className='min-w-full' key={s} />
-            )]}
-          </Carousel>
-        </div>
+    <section className='relative flex content-center items-center justify-center mt-16'>
+      <div className="w-full h-full ">
+        <Carousel autoSlide={true} >
+          {[...slides.map((s) =>
+            <img src={s} className='min-w-full' key={s} />
+          )]}
+        </Carousel>
       </div>
-      <span id='blackOverlay' className='w-full h-full absolute opacity-25 bg-black'></span>
 
     </section>
 
