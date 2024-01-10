@@ -37,7 +37,7 @@ export default function Navbar ({ transparent }) {
             />
             <div className='hidden md:flex flex-col gap-0 items-center justify-center font-bold leading-9'>
               <span className='text-main'> Tu Estilo</span>
-              <span className='text-red-500'> Calzado</span>
+              <span className='text-red-500'> Calzados</span>
             </div>
           </a>
           <button

@@ -98,7 +98,7 @@ export default function Footer () {
         <div className='flex flex-wrap items-center md:justify-between justify-center uppercase'>
           <div className='w-full px-4 mx-auto text-center '>
             <div className='text-[8px] text-white py-1 '>
-              © {new Date().getFullYear()} Tu estilo calzado. Todos los derechos reservados
+              © {new Date().getFullYear()} Tu estilo calzados. Todos los derechos reservados
             </div>
           </div>
         </div>

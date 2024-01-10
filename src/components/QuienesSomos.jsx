@@ -22,7 +22,7 @@ export default function QuienesSomos () {
             <div className='flex flex-col items-center md:flex-none md:items-start'>
 
               <p className='text-2xl leading-relaxed font-medium'>
-                <strong className='font-black'>Tu Estilo Calzado</strong> es
+                <strong className='font-black'>Tu Estilo Calzados</strong> es
                   una forma de andar por el mundo. Nuestro objetivo es tu comodidad,
                   queremos que puedas caminar tranquilo con tu calzado ideal para el lugar que elijas.
                   Nos importa conocerte para elegir juntos la mejor opción para tus pies.
