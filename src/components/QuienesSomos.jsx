@@ -3,7 +3,7 @@ import { Slide } from 'react-awesome-reveal'
 export default function QuienesSomos () {
   return (
 
-    <section className='py-28 bg-white' id='acercade'>
+    <section className='py-10 sm:py-28 bg-white' id='acercade'>
       <div className='container mx-auto px-4'>
         <div className='flex flex-wrap flex-col md:flex-row items-start  gap-7 md:gap-0' >
 

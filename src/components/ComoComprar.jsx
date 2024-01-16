@@ -1,5 +1,4 @@
 import { FaWhatsapp } from 'react-icons/fa'
-import { BsDownload } from 'react-icons/bs'
 import { URL_WHATSAPP } from '../constants/const'
 import { Slide } from 'react-awesome-reveal'
 import producto1 from '../assets/img/producto1.png'
@@ -21,7 +20,8 @@ export default function ComoComprar () {
             />
           </Slide>
           <div className='w-full md:w-6/12 mx-auto mt-4 lg:mt-0 px-4'>
-            <Slide duration={300} direction='right' className='md:pr-12 text-center md:text-left flex items-center'>
+            <Slide duration={300} direction='right' className='md:pr-12
+            text-center md:text-left flex flex-col items-start '>
 
               <h3 className='hidden md:block text-4xl mb-2 font-black
               w-full md:max-w-2 text-title font-comfortaaB text-center md:text-left'>
@@ -41,15 +41,6 @@ export default function ComoComprar () {
                     target='_blank' rel='noreferrer'>
                     <FaWhatsapp className='w-6 h-6 group-hover:scale-105' />
                                 Escribinos por Whatsapp
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className='flex gap-3 justify-center items-center border text-pink-700
-                      border-solid border-pink-700 hover:text-pink-800 hover:border-pink-800 group p-4 rounded-lg'
-                    href='#drive'>
-                    <BsDownload className='w-6 h-6 group-hover:scale-105' />
-                                Ver nuestro catálogo
                   </a>
                 </li>
 

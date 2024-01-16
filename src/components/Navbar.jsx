@@ -14,8 +14,8 @@ export default function Navbar ({ transparent }) {
         (transparent
           ? 'bg-transparent'
           : 'bg-white') +
-          ` w-full flex flex-wrap items-center justify-between px-2 py-3 
-          fixed top-0 right-0 left-0 z-50 transition-colors duration-500 ease-in-out select-none`
+          ` flex flex-wrap items-center justify-between px-2 py-3 
+          fixed top-0 right-0 left-0 z-50 transition-colors duration-500 ease-in-out select-none w-screen`
       }
     >
       <div className='container px-4 mx-auto flex flex-wrap items-center justify-between'>
@@ -35,7 +35,7 @@ export default function Navbar ({ transparent }) {
                 : 'block') +
             ' w-20 md:w-48'}
             />
-            <div className='hidden md:flex flex-col gap-0 items-center justify-center font-bold leading-9'>
+            <div className='hidden md:flex flex-col gap-0 items-start justify-center font-bold leading-9'>
               <span className='text-main'> Tu Estilo</span>
               <span className='text-red-500'> Calzados</span>
             </div>

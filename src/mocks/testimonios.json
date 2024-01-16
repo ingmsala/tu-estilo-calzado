@@ -3,25 +3,31 @@
         {
             "id": 1,
             "nombre": "Alejandra",
-            "foto": "img/testimonios/juan.jpg",
             "detalle": "Tiene mucha variedad, buen calidad y es muy amable para vender. Además con la compra siempre te regala una plantita"
         },
         {
             "id": 2,
             "nombre": "Noe",
-            "foto": "img/testimonios/maria.jpg",
             "detalle": "Celina siempre me ha atendido de forma tan amena y cálida, que me dan ganas de volver. Todos los productos son de gran calidad. La recomiendo mucho."
         },
         {
             "id": 3,
             "nombre": "Marytte",
-            "foto": "img/testimonios/pedro.jpg",
             "detalle": "La atención siempre ha sido la mejor. Celina hace sentir a cada uno como un cliente privilegiado. Tiene productos de excelente calidad y siempre la recomiendo."
         },
         {
             "id": 4,
-            "nombre": "Alita ",
-            "foto": "img/testimonios/jose.jpg",
+            "nombre": "Alita",
             "detalle": "Celina es la mejor vendedora, cada vez que la visitamos nos ayuda a elegir siempre el mejor producto y la mejor opción para nuestros pies."
+        },
+        {
+            "id": 5,
+            "nombre": "Analia",
+            "detalle": "Excelente atención y mercadería, siempre busca algo que ofrecerme... Nunca nos vamos con las manos vacías."
+        },
+        {
+            "id": 6,
+            "nombre": "Inesita",
+            "detalle": "Excelente resultado con las chinelas y el asesoramiento también. Calculamos que cada 6 meses nos hace falta un par."
         }
     ]

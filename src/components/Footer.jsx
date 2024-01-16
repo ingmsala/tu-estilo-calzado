@@ -1,7 +1,7 @@
 import React from 'react'
 import { PHONE_NUMBER, URL_INSTAGRAM, URL_WHATSAPP } from '../constants/const'
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa'
-import logo from '../assets/img/logo-white.png'
+import logo from '../assets/img/logo-white.webp'
 
 export default function Footer () {
   return (
@@ -27,7 +27,7 @@ export default function Footer () {
                 <ul>
                   <li>
                     <a
-                      className='flex items-center justify-center gap-3 hover:text-gray-700'
+                      className='flex items-center justify-center gap-3 hover:text-gray-300'
                       href={URL_WHATSAPP}
                       target='_blank' rel='noreferrer'
                     >
@@ -45,7 +45,7 @@ export default function Footer () {
                 <ul>
                   <li>
                     <a
-                      className='flex items-center justify-center gap-3 hover:text-gray-700'
+                      className='flex items-center justify-center gap-3 hover:text-gray-300'
                       href={URL_INSTAGRAM}
                       target='_blank' rel='noreferrer'
                     >
@@ -62,27 +62,27 @@ export default function Footer () {
 
                 <ul className='list-unstyled'>
                   <li>
-                    <a className=' text-white hover:text-gray-600 block pb-2 text-sm'
+                    <a className=' text-white hover:text-gray-300 block pb-2 text-sm'
                       href='#acercade'>Quienes somos
                     </a>
                   </li>
                   <li>
-                    <a className=' text-white hover:text-gray-600 block pb-2 text-sm'
+                    <a className=' text-white hover:text-gray-300 block pb-2 text-sm'
                       href='#productos'>Productos
                     </a>
                   </li>
                   <li>
-                    <a className=' text-white hover:text-gray-600 block pb-2 text-sm'
+                    <a className=' text-white hover:text-gray-300 block pb-2 text-sm'
                       href='#feria'>La feria
                     </a>
                   </li>
                   <li>
-                    <a className=' text-white hover:text-gray-600 block pb-2 text-sm'
+                    <a className=' text-white hover:text-gray-300 block pb-2 text-sm'
                       href='#ubicacion'>Ubicación
                     </a>
                   </li>
                   <li>
-                    <a className=' text-white hover:text-gray-600 block pb-2 text-sm'
+                    <a className=' text-white hover:text-gray-300 block pb-2 text-sm'
                       href='#testimonios'>Nuestros clientes
                     </a>
                   </li>
