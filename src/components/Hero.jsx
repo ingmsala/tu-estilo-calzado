@@ -21,7 +21,7 @@ export default function Hero () {
           {[...slides.map((s) => {
             return (
 
-              <img src={s} className='min-w-full' key={s} />
+              <img src={s} className='min-w-full' aria-hidden='true' alt='Banner de la marca' key={s} />
 
             )
           }
@@ -33,7 +33,7 @@ export default function Hero () {
           {[...slidesMobile.map((s) => {
             return (
 
-              <img src={s} className='min-w-full' key={s} />
+              <img src={s} className='min-w-full' aria-hidden='true' alt='Banner de la marca' key={s} />
 
             )
           }

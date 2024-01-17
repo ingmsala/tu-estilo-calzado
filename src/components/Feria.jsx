@@ -14,9 +14,9 @@ export default function Feria () {
       <Slide direction='up' duration={300}>
         <div className='bg-gray-900/90 text-white opacity-80 mx-auto sm:mx-0 md:rounded-tr-xl max-w-lg p-4'>
           <div className='flex flex-wrap '>
-            <h6 className='font-semibold text-4xl'>
+            <h2 className='font-semibold text-4xl'>
                       La feria de San Vicente
-            </h6>
+            </h2>
             <p className='mt-4 text-sm font-thin '>
                 En el popular barrio San Vicente, el Paseo se ubica en calle San Jerónimo,
                 entre Ambrosio Funes y Sargento Cabral, funciona los domingos de 9 a 14 horas.

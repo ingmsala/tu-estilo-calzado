@@ -22,15 +22,18 @@ export default function Ubicacion () {
 
           </Fade>
 
-          <Zoom duration={500} className='w-full overflow-hidden h-96 rounded-lg'>
-            <iframe
-              src='https://www.google.com/maps/d/u/0/embed?mid=1tvDpHZb4jrEYjhCSYCfvzEOXf5l6lBE&ehbc=2E312F&noprof=1'
-              width='896' height='667'
-              className='-mt-20'
-              loading='lazy'
-              referrerPolicy='no-referrer-when-downgrade'
-            >
-            </iframe>
+          <Zoom duration={500} className='w-full overflow-hidden rounded-lg'>
+
+            <div className="relative text-right h-96 w-full">
+              <div className="overflow-hidden bg-none h-96 w-full">
+                <iframe className='max-w-96 sm:max-w-4xl' width="896" height="400"
+                  title='mapa de ubicación de Tu Estilo Calzados'
+                  src="https://maps.google.com/maps?q=San+Jer%C3%B3nimo+2698&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                  frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0">
+                </iframe>
+              </div>
+            </div>
+
           </Zoom>
         </div>
 

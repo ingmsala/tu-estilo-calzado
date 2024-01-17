@@ -45,6 +45,7 @@ export default function Navbar ({ transparent }) {
             px-3 py-1 border border-solid border-transparent
             rounded bg-transparent block lg:hidden outline-none focus:outline-none'
             type='button'
+            aria-label="Abrir menú de navegación"
             onClick={() => setNavbarOpen(!navbarOpen)}
           >
             <RxHamburgerMenu className={(transparent ? 'text-white' : 'text-[#6F6F6F]') + ' w-6 h-6 '} />
