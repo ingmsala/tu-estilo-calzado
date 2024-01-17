@@ -28,7 +28,7 @@ export default function Ubicacion () {
               <div className="overflow-hidden bg-none h-96 w-full">
                 <iframe className='max-w-96 sm:max-w-4xl' width="896" height="400"
                   title='mapa de ubicación de Tu Estilo Calzados'
-                  src="https://maps.google.com/maps?q=San+Jer%C3%B3nimo+2698&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                  src="https://maps.google.com/maps?q=San+Jer%C3%B3nimo+2750%2C+C%C3%B3rdoba%2C+Argentina&t=&z=16&ie=UTF8&iwloc=&output=embed"
                   frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0">
                 </iframe>
               </div>
